@@ -1,0 +1,887 @@
+/* reseteo css */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+/* index mobile*/
+
+.arriba {
+    height: 120px;
+}
+
+.divLogoArriba {
+    display: inline-block;
+}
+
+.imgLogoArriba {
+    width: 150px;
+    padding: 15px;
+    top: 0;
+    left: 0;
+}
+
+.divRedes {
+    float: right;
+    margin: 35px 0px 0px 0px;
+}
+
+.logoRedes {
+    width: 24px;
+    margin: 10px;
+}
+
+.logoRedesYT {
+    width: 32px;
+    margin: 10px;
+}
+
+/*nav mobile */
+
+.navbar {
+    background: #0D223F !important;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 21px;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    font-size: 22px;
+
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border: 1px solid #ffffff;
+}
+
+/*contenido index mobile*/
+
+.divLogoInicio {
+    text-align: center;
+}
+
+.logoInicio {
+    width: 250px;
+    margin-top: 25px;
+}
+
+.inicio {
+    text-align: center;
+
+}
+
+.h1Inicio {
+    margin: auto;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    text-align-last: center;
+    padding: 35px 0px 25px 0px;
+    color: #0D223F;
+    width: 90%;
+    font-weight: 700;
+}
+
+.pInicio {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: auto;
+    padding: 10px 0px 30px 0px;
+    text-align: left;
+    font-size: 22px;
+    color: #0D223F;
+    width: 90%;
+    line-height: 32px;
+}
+
+hr {
+    margin: auto;
+    height: 3px;
+    background-color: #0D223F;
+    width: 85%;
+    text-align: center;
+}
+
+.ultimoEpisodio {
+    width: 90%;
+    margin: auto;
+    grid-auto-rows: 0;
+    margin-bottom: -50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.h2UltimoEpisodio {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    color: #0D223F;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.imgUltimoEpisodio {
+    width: 280px;
+    text-align: center;
+}
+
+.h3UltimoEpisodio {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #0D223F;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 25px 0px 15px 0px;
+    text-align: left;
+}
+
+.h4UltimoEpisodio {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    color: #0D223F;
+    font-weight: 100;
+    text-align: left;
+}
+
+.pUltimoEpisodio {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    color: #0D223F;
+    line-height: 35px;
+    margin: 25px 0px 25px 0px;
+    text-align: left;
+}
+
+/* footer mobile */
+
+.footer {
+    text-align: center;
+    background-color: #0D223F;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.pFooter {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+
+}
+
+.imgFooter {
+    width: 90px;
+}
+
+.aFooter {
+    color: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* episodios.html (MOBILE) */
+
+.h1Episodios {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: #0D223F;
+    margin: 65px;
+    font-weight: 700;
+}
+
+/* Barra buscar */
+
+.buscar {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.buscarEpisodio {
+    padding: 15px;
+    border-radius: 0px;
+    border: solid 1px black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
+.botonBuscar {
+    background-color: #0D223F;
+    color: #FFFFFF;
+    padding: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    border: solid 1px #000;
+    font-size: 20px;
+    width: 100px;
+}
+
+/* Episodios */
+
+.episodios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-gap: 20px;
+}
+
+.divEpisodios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 65% 10%;
+    background-color: #0D223F;
+    border-radius: 20px;
+    padding: 25px;
+    height: 400px;
+    width: 350px;
+    place-self: center center;
+
+}
+
+.h3Episodios {
+    font-family: 'Work Sans', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+    font-size: 1, 1vw;
+    font-weight: 700;
+}
+
+.pEpisodios {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #FFFFFF;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+
+.aEpisodios {
+    display: inline-block;
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* index tablet */
+
+    .arriba {
+        height: 120px;
+    }
+
+    .divLogoArriba {
+        display: inline-block;
+    }
+
+    .imgLogoArriba {
+        width: 150px;
+        padding: 15px;
+        top: 0;
+        left: 0;
+    }
+
+    .divRedes {
+        float: right;
+        margin: 25px;
+    }
+
+    .logoRedes {
+        width: 25px;
+        margin: 20px;
+    }
+
+    .logoRedesYT {
+        width: 35px;
+        margin: 20px;
+    }
+
+    /* nav tablet */
+
+    .navbar {
+        background: #0D223F !important;
+    }
+
+    .nav-link {
+        color: #FFFFFF;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 21px;
+    }
+
+    .nav-link:hover {
+        color: #ffffff;
+        font-size: 22px;
+
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    /* index.html tablet*/
+
+    .divLogoInicio {
+        text-align: center;
+    }
+
+    .logoInicio {
+        width: 350px;
+        margin-top: 35px;
+    }
+
+    .inicio {
+        text-align: center;
+
+    }
+
+    .h1Inicio {
+        margin: auto;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 30px;
+        text-align: justify;
+        text-align-last: center;
+        padding: 25px 0px 25px 0px;
+        color: #0D223F;
+        width: 90%;
+        font-weight: 700;
+    }
+
+    .pInicio {
+        font-family: 'Nunito Sans', sans-serif;
+        margin: auto;
+        padding: 10px 0px 30px 0px;
+        text-align: left;
+        font-size: 22px;
+        color: #0D223F;
+        width: 90%;
+    }
+
+    hr {
+        margin: auto;
+        height: 2px;
+        background-color: #0D223F;
+        width: 85%;
+        text-align: center;
+    }
+
+    .ultimoEpisodio {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 75px 75px 55px 1fr;
+        grid-template-areas: "h2UE h2UE"
+            "imgUE h3UE"
+            "imgUE h4UE"
+            "imgUE pUE";
+        width: 90%;
+        margin: auto;
+        grid-auto-rows: 0;
+        margin-bottom: -50px;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .h2UltimoEpisodio {
+        grid-area: h2UE;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        color: #0D223F;
+        margin-bottom: 0px;
+    }
+
+    .imgUltimoEpisodio {
+        grid-area: imgUE;
+        width: 85%;
+        justify-self: start;
+        align-self: center;
+        margin-right: 15px;
+    }
+
+    .h3UltimoEpisodio {
+        grid-area: h3UE;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #0D223F;
+        font-size: 25px;
+        font-weight: 600;
+        margin: 0px;
+    }
+
+    .h4UltimoEpisodio {
+        grid-area: h4UE;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 22px;
+        color: #0D223F;
+        font-weight: 100;
+        margin-top: 15px;
+    }
+
+    .pUltimoEpisodio {
+        grid-area: pUE;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 22px;
+        color: #0D223F;
+        line-height: 35px;
+        overflow: visible;
+    }
+
+    /* footer tablet*/
+
+    .footer {
+        text-align: center;
+        background-color: #0D223F;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100px;
+        margin-top: 50px;
+        padding: 0px;
+    }
+
+    .pFooter {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        margin-bottom: 0;
+
+    }
+
+    .imgFooter {
+        width: 90px;
+    }
+
+    .aFooter {
+        color: #FFFFFF;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 18px;
+    }
+
+    /* episodios.html */
+
+    .h1Episodios {
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        font-size: 80px;
+        margin: 65px;
+        color: #0D223F;
+        font-weight: 700;
+    }
+
+    /* Barra buscar */
+
+    .buscar {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+
+    .buscarEpisodio {
+        padding: 15px;
+        border-radius: 0px;
+        border: solid 1px black;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .botonBuscar {
+        background-color: #0D223F;
+        color: #FFFFFF;
+        padding: 15px;
+        font-family: 'Nunito Sans', sans-serif;
+        border: 0;
+        border: solid 1px #000;
+        font-size: 20px;
+        width: 100px;
+    }
+
+    /* Episodios */
+
+    .episodios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+
+    .divEpisodios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 65% 10%;
+        background-color: #0D223F;
+        border-radius: 20px;
+        padding: 20px;
+        height: 400px;
+        width: 350px;
+        margin: 0px 0px 40px 0px;
+        place-self: center center;
+    }
+
+    .h3Episodios {
+        font-family: 'Work Sans', sans-serif;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 10px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .pEpisodios {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #FFFFFF;
+        font-size: 15px;
+        overflow: hidden;
+    }
+
+
+    .aEpisodios {
+        display: inline-block;
+        font-family: 'Nunito Sans', sans-serif;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* index desktop */
+
+    .arriba {
+        height: 120px;
+    }
+
+    .divLogoArriba {
+        display: inline-block;
+    }
+
+    .imgLogoArriba {
+        width: 165px;
+        padding: 15px;
+        top: 0;
+        left: 0;
+    }
+
+    .divRedes {
+        float: right;
+        margin: 25px;
+    }
+
+    .logoRedes {
+        width: 30px;
+        margin: 20px;
+    }
+
+    .logoRedesYT {
+        width: 42px;
+        margin: 20px;
+    }
+
+    /* nav */
+
+    .navbar {
+        background: #0D223F;
+        width: 100%;
+    }
+
+    .nav-link {
+        color: #FFFFFF;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 21px;
+    }
+
+    .nav-link:hover {
+        color: #ffffff;
+        font-size: 22px;
+
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    /* contenido index*/
+
+    .divLogoInicio {
+        text-align: center;
+    }
+
+    .logoInicio {
+        width: 450px;
+        margin-top: 35px;
+    }
+
+    .inicio {
+        text-align: center;
+
+    }
+
+    .h1Inicio {
+        margin: auto;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 40px;
+        text-align: justify;
+        text-align-last: center;
+        padding: 25px 0px 25px 0px;
+        color: #0D223F;
+        width: 90%;
+        font-weight: 700;
+    }
+
+    .pInicio {
+        font-family: 'Nunito Sans', sans-serif;
+        margin: auto;
+        padding: 10px 0px 30px 0px;
+        text-align: left;
+        font-size: 25px;
+        color: #0D223F;
+        width: 90%;
+    }
+
+    hr {
+        margin: auto;
+        height: 2px;
+        background-color: #0D223F;
+        width: 85%;
+        text-align: center;
+    }
+
+    .ultimoEpisodio {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 75px 75px 55px 1fr;
+        grid-template-areas: "h2UE h2UE"
+            "imgUE h3UE"
+            "imgUE h4UE"
+            "imgUE pUE";
+        width: 90%;
+        margin: auto;
+        grid-auto-rows: 0;
+        margin-bottom: -50px;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .h2UltimoEpisodio {
+        grid-area: h2UE;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        color: #0D223F;
+        margin-bottom: 0px;
+    }
+
+    .imgUltimoEpisodio {
+        grid-area: imgUE;
+        width: 85%;
+        justify-self: start;
+        align-self: center;
+        margin-right: 15px;
+    }
+
+    .h3UltimoEpisodio {
+        grid-area: h3UE;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #0D223F;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0px;
+    }
+
+    .h4UltimoEpisodio {
+        grid-area: h4UE;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 25px;
+        color: #0D223F;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+
+    .pUltimoEpisodio {
+        grid-area: pUE;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 25px;
+        color: #0D223F;
+        line-height: 35px;
+        overflow: visible;
+    }
+
+
+    /* footer */
+
+    .footer {
+        text-align: center;
+        background-color: #0D223F;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100px;
+        margin-top: 100px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .pFooter {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+        color: #FFFFFF;
+        align-self: center;
+        margin-bottom: 0;
+
+    }
+
+    .imgFooter {
+        width: 90px;
+    }
+
+    .aFooter {
+        color: #FFFFFF;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 22px;
+    }
+
+    /* episodios.html */
+
+    .h1Episodios {
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        font-size: 80px;
+        margin: 75px;
+        color: #0D223F;
+    }
+
+    /* Barra buscar */
+
+    .buscar {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+
+    .buscarEpisodio {
+        padding: 15px;
+        border-radius: 0px;
+        border: solid 1px black;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 20px;
+        width: 88%;
+    }
+
+    .botonBuscar {
+        background-color: #0D223F;
+        color: #FFFFFF;
+        padding: 15px;
+        font-family: 'Nunito Sans', sans-serif;
+        border: 0;
+        border: solid 1px #000;
+        font-size: 20px;
+        width: 100px;
+    }
+
+    /* Episodios */
+
+    .episodios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+
+    .divEpisodios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 65% 10%;
+        background-color: #0D223F;
+        border-radius: 20px;
+        padding: 20px;
+        height: 400px;
+        width: 75%;
+        margin: 0px 0px 80px 0px;
+        place-self: center center;
+    }
+
+    .h3Episodios {
+        font-family: 'Work Sans', sans-serif;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 10px 10px 0px 0px;
+        font-size: 1, 1vw;
+        font-weight: 700;
+    }
+
+    .pEpisodios {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #FFFFFF;
+        font-size: 15px;
+        margin-top: 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 9;
+        overflow: hidden;
+    }
+
+
+    .aEpisodios {
+        display: inline-block;
+        font-family: 'Nunito Sans', sans-serif;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    /* consulta.html */
+
+    .contacto {
+        margin: 25px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .episodios {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+
+}
