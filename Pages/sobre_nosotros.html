@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marc Jospitre Consulting</title>
     <link rel="shortcut icon" href="../Assets/IMG/podcast.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -28,17 +30,34 @@
 
         <!-- *nav*/ -->
 
-        <header class="header">        
-            <nav class="navHeader">
-                <ul class="navUlHeader">
-                    <li class="navLiHeader"> <a class="aNavLiHeader" href="/index.html">Inicio</a> </li>
-                    <li class="navLiHeader"> <a class="aNavLiHeader" href="../Pages/episodios.html">Episodios</a> </li>
-                    <li class="navLiHeader"> <a class="aNavLiHeader" href="../Pages/sobre_nosotros.html">Sobre Nosotros</a> </li>
-                    <li class="navLiHeader"> <a class="aNavLiHeader" href="../Pages/marc_jospitre_consulting.html">Marc Jospitre Consulting</a> </li>
-                    <li class="navLiHeader"> <a class="aNavLiHeader" href="../Pages/deja_una_consulta.html">Deja una consulta</a> </li>
-                </ul>
-            </nav>
-        </header>
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="episodios.html">Episodios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="marc_jospitre_consulting.html">Marc Jospitre
+                                Consulting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="deja_una_consulta.html">Deja una consulta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <!-- *contenido: título y sobre nosotros*/ -->
 
@@ -72,5 +91,9 @@
             <a class="aFooter" target="_blank" href="https://www.marcjospitre.com/">© 2023 Marc Jospitre Consulting</a>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
 </body>
 </html>
