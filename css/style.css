@@ -30,12 +30,14 @@ a:active {
   float: right;
   margin: 35px 0px 0px 0px;
 }
-.arriba .divRedes .logoRedes {
-  width: 24px;
+.arriba .divRedes .fa-brands {
+  font-size: 30px;
+  color: #0D223F;
   margin: 10px;
 }
-.arriba .divRedes .logoRedesYT {
-  width: 32px;
+.arriba .divRedes .fa-solid {
+  font-size: 30px;
+  color: #0D223F;
   margin: 10px;
 }
 
@@ -74,7 +76,7 @@ a:active {
 .inicio .h1Inicio {
   margin: auto;
   font-family: "Work Sans", sans-serif;
-  font-size: 22px;
+  font-size: 27px;
   text-align: justify;
   -moz-text-align-last: center;
        text-align-last: center;
@@ -92,6 +94,7 @@ a:active {
   color: #0D223F;
   width: 90%;
   line-height: 32px;
+  font-weight: 500;
 }
 
 hr {
@@ -100,19 +103,19 @@ hr {
   background-color: #0D223F;
   width: 85%;
   text-align: center;
+  opacity: 1;
 }
 
 .ultimoEpisodio {
   width: 90%;
   margin: auto;
-  grid-auto-rows: 0;
-  margin-bottom: -50px;
+  margin-bottom: 50px;
   margin-top: 30px;
   text-align: center;
 }
 .ultimoEpisodio .h2UltimoEpisodio {
   font-family: "Work Sans", sans-serif;
-  font-size: 30px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   color: #0D223F;
@@ -127,9 +130,9 @@ hr {
   font-family: "Nunito Sans", sans-serif;
   color: #0D223F;
   font-size: 26px;
-  font-weight: 600;
   margin: 25px 0px 15px 0px;
   text-align: left;
+  font-weight: 700;
 }
 .ultimoEpisodio .playerUltimoEpisodio {
   margin-bottom: 25px;
@@ -138,7 +141,7 @@ hr {
   font-family: "Nunito Sans", sans-serif;
   font-size: 22px;
   color: #0D223F;
-  font-weight: 100;
+  font-weight: 700;
   text-align: left;
 }
 .ultimoEpisodio .pUltimoEpisodio {
@@ -148,6 +151,7 @@ hr {
   line-height: 35px;
   margin: 25px 0px 25px 0px;
   text-align: left;
+  font-weight: 500;
 }
 
 /* footer mobile */
@@ -159,7 +163,7 @@ hr {
   justify-content: space-evenly;
   align-items: center;
   height: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 10px;
 }
 .footer .pFooter {
@@ -183,7 +187,7 @@ hr {
   text-align: center;
   font-size: 50px;
   color: #0D223F;
-  margin: 65px;
+  margin: 55px;
   font-weight: 700;
 }
 
@@ -227,7 +231,7 @@ hr {
   border-radius: 20px;
   padding: 25px;
   height: 400px;
-  width: 350px;
+  width: 400px;
   place-self: center center;
 }
 .episodios .divEpisodios .h3Episodios {
@@ -254,6 +258,154 @@ hr {
   font-weight: 700;
 }
 
+/* Sobre Nosotros */
+.sobreNosotros {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.sobreNosotros .h1SobreNosotros {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: #0D223F;
+  margin: 45px;
+  font-weight: 700;
+}
+.sobreNosotros .imgMarc {
+  width: 85%;
+  box-shadow: 10px 10px 5px 0px #adadad;
+  margin: 0px 0px 15px 0px;
+}
+.sobreNosotros .imgAlfredo {
+  width: 85%;
+  box-shadow: 10px 10px 5px 0px #adadad;
+  margin: 50px 0px 15px 0px;
+}
+.sobreNosotros .imgAna {
+  width: 85%;
+  box-shadow: 10px 10px 5px 0px #adadad;
+  margin: 50px 0px 15px 0px;
+}
+.sobreNosotros .divNosotros {
+  background-color: #0D223F;
+  width: 85%;
+  margin: auto;
+  box-shadow: 10px 10px 5px 0px #adadad;
+}
+.sobreNosotros .divNosotros .h2Nosotros {
+  color: #fff;
+  margin: 25px 0px 0px 0px;
+  padding: 25px 0px 0px 0px;
+  font-size: 40px;
+}
+.sobreNosotros .divNosotros .pNosotros {
+  color: #fff;
+  margin: 25px;
+  padding: 25px;
+  font-size: 20px;
+}
+
+/* marc_jospitre_consulting.html */
+.jospitreConsulting {
+  width: 90%;
+  margin: auto;
+}
+.jospitreConsulting .h1AcercaMarc {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #0D223F;
+  margin: 25px;
+  font-weight: 700;
+}
+.jospitreConsulting .pAcercaMarc {
+  color: #0D223F;
+  font-size: 15px;
+}
+.jospitreConsulting .h2LosImparables {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: #0D223F;
+  margin: 25px;
+  font-weight: 700;
+}
+.jospitreConsulting .h2HistoriaMarc {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: #0D223F;
+  margin: 25px;
+  font-weight: 700;
+}
+
+.divVideo {
+  margin: auto;
+  text-align: center;
+  margin-bottom: -20px;
+}
+.divVideo .videoMarc {
+  width: 90%;
+  border-radius: 10px;
+}
+
+/* Deja consulta */
+.h1Consulta {
+  color: #0D223F;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #0D223F;
+  margin: 50px 25px 35px 25px;
+  font-weight: 700;
+}
+
+.pConsulta {
+  font-family: "Nunito Sans", sans-serif;
+  color: #0D223F;
+  font-size: 20px;
+  text-align: center;
+  margin: 15px;
+  font-weight: 700;
+}
+
+.contacto {
+  margin: 35px;
+  background-color: #0D223F;
+  color: #FFFFFF;
+  padding: 10px;
+}
+.contacto .formContacto input,
+.contacto .formContacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+}
+.contacto .formContacto label {
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+.contacto .buttonContacto {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #fff;
+  border-bottom: none;
+  outline: none;
+  color: #0D223F;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+}
+
 @media only screen and (min-width: 768px) {
   /* index tablet */
   .arriba {
@@ -267,6 +419,20 @@ hr {
     padding: 15px;
     top: 0;
     left: 0;
+  }
+  .arriba .divRedes {
+    float: right;
+    margin: 25px 20px 0px 0px;
+  }
+  .arriba .divRedes .fa-brands {
+    font-size: 40px;
+    color: #0D223F;
+    margin: 20px;
+  }
+  .arriba .divRedes .fa-solid {
+    font-size: 40px;
+    color: #0D223F;
+    margin: 20px;
   }
   .divRedes {
     float: right;
@@ -292,11 +458,11 @@ hr {
   .navbar .navbar-nav .nav-link {
     color: #FFFFFF;
     font-family: "Work Sans", sans-serif;
-    font-size: 21px;
+    font-size: 18px;
   }
   .navbar .navbar-nav .nav-link:hover {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 19px;
   }
   /* index.html tablet*/
   .divLogoInicio {
@@ -370,18 +536,19 @@ hr {
     font-family: "Nunito Sans", sans-serif;
     color: #0D223F;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0px;
   }
   .ultimoEpisodio .playerUltimoEpisodio {
     grid-area: playUE;
+    margin-bottom: 155px;
   }
   .ultimoEpisodio .h4UltimoEpisodio {
     grid-area: h4UE;
     font-family: "Nunito Sans", sans-serif;
     font-size: 22px;
     color: #0D223F;
-    font-weight: 100;
+    font-weight: 700;
     margin-top: 15px;
   }
   .ultimoEpisodio .pUltimoEpisodio {
@@ -492,31 +659,189 @@ hr {
     font-size: 16px;
     font-weight: 700;
   }
+  .sobreNosotros {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .sobreNosotros .h1SobreNosotros {
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: #0D223F;
+    margin: 45px;
+    font-weight: 700;
+  }
+  .sobreNosotros .imgMarc {
+    width: 600px;
+    box-shadow: 10px 10px 5px 0px #adadad;
+    margin: 0px 0px 15px 0px;
+  }
+  .sobreNosotros .imgAlfredo {
+    width: 600px;
+    box-shadow: 10px 10px 5px 0px #adadad;
+    margin: 50px 0px 15px 0px;
+  }
+  .sobreNosotros .imgAna {
+    width: 600px;
+    box-shadow: 10px 10px 5px 0px #adadad;
+    margin: 50px 0px 15px 0px;
+  }
+  .sobreNosotros .divNosotros {
+    background-color: #0D223F;
+    width: 600px;
+    margin: auto;
+    box-shadow: 10px 10px 5px 0px #adadad;
+  }
+  .sobreNosotros .divNosotros .h2Nosotros {
+    color: #fff;
+    margin: 25px 0px 0px 0px;
+    padding: 25px 0px 0px 0px;
+    font-size: 40px;
+  }
+  .sobreNosotros .divNosotros .pNosotros {
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    margin: 25px;
+    padding: 25px;
+    font-size: 20px;
+  }
+  /* marc_jospitre_consulting.html */
+  .jospitreConsulting {
+    width: 90%;
+    margin: auto;
+  }
+  .jospitreConsulting .h1AcercaMarc {
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: #0D223F;
+    margin: 45px;
+    font-weight: 700;
+  }
+  .jospitreConsulting .pAcercaMarc {
+    font-family: "Nunito Sans", sans-serif;
+    color: #0D223F;
+    font-size: 20px;
+  }
+  .jospitreConsulting .h2LosImparables {
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: #0D223F;
+    margin: 45px;
+    font-weight: 700;
+  }
+  .jospitreConsulting .h2HistoriaMarc {
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: #0D223F;
+    margin: 45px;
+    font-weight: 700;
+  }
+  .divVideo {
+    margin: auto;
+    text-align: center;
+  }
+  .divVideo .videoMarc {
+    width: 90%;
+    border-radius: 10px;
+  }
+  /*deja una consulta.html */
+  .h1Consulta {
+    color: #0D223F;
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: #0D223F;
+    margin: 25px;
+    font-weight: 700;
+  }
+  .pConsulta {
+    font-family: "Nunito Sans", sans-serif;
+    color: #0D223F;
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+    font-weight: 700;
+  }
+  .contacto {
+    margin: 35px 20px 0px 20px;
+    background-color: #0D223F;
+    color: #FFFFFF;
+    padding: 20px;
+  }
+  .contacto .formContacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px, 1fr, 100px;
+    grid-gap: 20px;
+  }
+  .contacto .formContacto input,
+  .contacto .formContacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .contacto .pConsulta,
+  .contacto .pButton {
+    grid-column: 1/4;
+  }
+  .contacto .formContacto:nth-child(4) {
+    grid-column: 1/4;
+  }
+  .contacto .formContacto label {
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    font-weight: 700;
+  }
+  .contacto .buttonContacto {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    border-bottom: none;
+    outline: none;
+    color: #0D223F;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    grid-column: 1/4;
+  }
 }
 @media only screen and (min-width: 1200px) {
   /* index desktop */
   .arriba {
-    height: 120px;
+    height: 130px;
   }
   .arriba .divLogoArriba {
     display: inline-block;
   }
   .arriba .divLogoArriba .imgLogoArriba {
-    width: 165px;
+    width: 180px;
     padding: 15px;
     top: 0;
     left: 0;
   }
-  .divRedes {
+  .arriba .divRedes {
     float: right;
     margin: 25px 20px 0px 0px;
   }
-  .divRedes .logoRedes {
-    width: 300px;
+  .arriba .divRedes .fa-brands {
+    font-size: 40px;
+    color: #0D223F;
     margin: 20px;
   }
-  .divRedes .logoRedesYT {
-    width: 402px;
+  .arriba .divRedes .fa-solid {
+    font-size: 40px;
+    color: #0D223F;
     margin: 20px;
   }
   /* nav */
@@ -532,11 +857,11 @@ hr {
   .navbar .navbar-nav .nav-link {
     color: #FFFFFF;
     font-family: "Work Sans", sans-serif;
-    font-size: 21px;
+    font-size: 22px;
   }
   .navbar .navbar-nav .nav-link:hover {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 23px;
   }
   /* contenido index*/
   .divLogoInicio {
@@ -613,7 +938,7 @@ hr {
     font-family: "Nunito Sans", sans-serif;
     color: #0D223F;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0px;
   }
   .ultimoEpisodio .h4UltimoEpisodio {
@@ -621,7 +946,7 @@ hr {
     font-family: "Nunito Sans", sans-serif;
     font-size: 25px;
     color: #0D223F;
-    font-weight: 100;
+    font-weight: 700;
     margin-top: 10px;
   }
   .ultimoEpisodio .pUltimoEpisodio {
@@ -740,6 +1065,163 @@ hr {
   /* consulta.html */
   .contacto {
     margin: 25px;
+  }
+  /* sobre_nosotros.html */
+  .sobreNosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 1fr;
+  }
+  .sobreNosotros .h1SobreNosotros {
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-size: 80px;
+    color: #0D223F;
+    font-weight: 700;
+    grid-column: 1/4;
+  }
+  .sobreNosotros .imgMarc {
+    width: 80%;
+    margin: 0;
+  }
+  .sobreNosotros .imgAlfredo {
+    width: 80%;
+    margin: 0;
+  }
+  .sobreNosotros .imgAna {
+    width: 80%;
+    margin: 0;
+  }
+  .sobreNosotros .divNosotros {
+    background-color: #0D223F;
+    width: 80%;
+    margin: auto;
+    box-shadow: 10px 10px 5px 0px #adadad;
+  }
+  .sobreNosotros .divNosotros .h2Nosotros {
+    color: #fff;
+    margin: 25px 0px 0px 0px;
+    padding: 25px 10px 0px 10px;
+    font-size: 40px;
+  }
+  .sobreNosotros .divNosotros .pNosotros {
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    margin: 0px;
+    padding: 25px;
+    font-size: 20px;
+  }
+  /* marc_jospitre_consulting.html */
+  .jospitreConsulting {
+    width: 90%;
+    margin: auto;
+  }
+  .jospitreConsulting .h1AcercaMarc {
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-size: 55px;
+    color: #0D223F;
+    margin: 45px;
+    font-weight: 700;
+  }
+  .jospitreConsulting .pAcercaMarc {
+    font-family: "Nunito Sans", sans-serif;
+    color: #0D223F;
+    font-size: 25px;
+  }
+  .jospitreConsulting .h2LosImparables {
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: #0D223F;
+    margin: 45px;
+    font-weight: 700;
+  }
+  .jospitreConsulting .h2HistoriaMarc {
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: #0D223F;
+    margin: 45px;
+    font-weight: 700;
+  }
+  .divVideo {
+    margin: auto;
+    text-align: center;
+  }
+  .divVideo .videoMarc {
+    width: 90%;
+  }
+  /*deja una consulta.html */
+  .h1Consulta {
+    color: #0D223F;
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: #0D223F;
+    margin: 25px 25px 75px 25px;
+    font-weight: 700;
+  }
+  .pConsulta {
+    font-family: "Nunito Sans", sans-serif;
+    color: #0D223F;
+    font-size: 25px;
+    text-align: center;
+    margin: 25px;
+    font-weight: 700;
+  }
+  .contacto {
+    margin: auto;
+    background-color: #0D223F;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 85%;
+    margin-top: 75px;
+  }
+  .contacto .formContacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px, 1fr, 100px;
+    grid-gap: 20px;
+  }
+  .contacto .formContacto input,
+  .contacto .formContacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .contacto .pConsulta,
+  .contacto .pButton {
+    grid-column: 1/4;
+  }
+  .contacto .formContacto label {
+    font-size: 25px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #fff;
+    font-weight: 700;
+  }
+  .contacto .buttonContacto {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #fff;
+    border-bottom: none;
+    outline: none;
+    color: #0D223F;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    grid-column: 1/4;
+  }
+  .contacto .buttonContacto:hover {
+    background: rgb(22, 101, 212);
+    transition: background-color 0.5s ease-in-out;
+    color: #fff;
   }
 }
 @media only screen and (min-width: 1400px) {
