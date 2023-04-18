@@ -1,4 +1,4 @@
-/* reseteo css */
+// reseteo css
 
 * {
     padding: 0px;
@@ -6,16 +6,28 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+// Fuentes
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Nunito+Sans:wght@300;400;600;700;800&family=Work+Sans:wght@500;600;700;800&display=swap');
+
+// Variables
+
+$color1: #0D223F;
+$color2: #fff;
+$fontWork: 'work sans', sans-serif;
+$fontNunito: 'Nunito Sans', sans-serif;
+$fontAllura: 'Allura', cursive;
+
+// Link
 
 a:link,
 a:visited,
 a:active {
     text-decoration: none;
-    color: #FFFFFF;
+    color: $color2;
 }
 
-/* index mobile*/
+// index mobile
 
 .arriba {
     height: 120px;
@@ -37,25 +49,25 @@ a:active {
 
         .fa-brands {
             font-size: 30px;
-            color: #0D223F;
+            color: $color1;
             margin: 10px;
         }
 
         .fa-solid {
             font-size: 30px;
-            color: #0D223F;
+            color: $color1;
             margin: 10px;
         }
     }
 }
 
-/*nav mobile */
+// nav mobile 
 
 .navbar {
-    background: #0D223F !important;
+    background: $color1 !important;
 
     .navbar-toggler {
-        border: 1px solid #ffffff;
+        border: 1px solid $color2;
 
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -63,19 +75,19 @@ a:active {
     }
 
     .nav-link {
-        color: #FFFFFF;
-        font-family: 'Work Sans', sans-serif;
+        color: $color2;
+        font-family: $fontWork;
         font-size: 21px;
     }
 
     .nav-link:hover {
-        color: #ffffff;
+        color: $color2;
         font-size: 22px;
 
     }
 }
 
-/*contenido index mobile*/
+// contenido index mobile
 
 .divLogoInicio {
     text-align: center;
@@ -92,23 +104,23 @@ a:active {
 
     .h1Inicio {
         margin: auto;
-        font-family: 'Work Sans', sans-serif;
+        font-family: $fontWork;
         font-size: 27px;
         text-align: justify;
         text-align-last: center;
         padding: 35px 0px 25px 0px;
-        color: #0D223F;
+        color: $color1;
         width: 90%;
         font-weight: 700;
     }
 
     .pInicio {
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: $fontNunit;
         margin: auto;
         padding: 10px 0px 30px 0px;
         text-align: left;
         font-size: 22px;
-        color: #0D223F;
+        color: $color1;
         width: 90%;
         line-height: 32px;
         font-weight: 500;
@@ -119,7 +131,7 @@ a:active {
 hr {
     margin: auto;
     height: 3px;
-    background-color: #0D223F;
+    background-color: $color1;
     width: 85%;
     text-align: center;
     opacity: 1;
@@ -133,11 +145,11 @@ hr {
     text-align: center;
 
     .h2UltimoEpisodio {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $fontWork;
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
-        color: #0D223F;
+        color: $color1;
         text-align: left;
         margin-bottom: 15px;
     }
@@ -148,8 +160,8 @@ hr {
     }
 
     .h3UltimoEpisodio {
-        font-family: 'Nunito Sans', sans-serif;
-        color: #0D223F;
+        font-family: $fontNunit;
+        color: $color1;
         font-size: 26px;
         margin: 25px 0px 15px 0px;
         text-align: left;
@@ -161,17 +173,17 @@ hr {
     }
 
     .h4UltimoEpisodio {
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: $fontNunit;
         font-size: 22px;
-        color: #0D223F;
+        color: $color1;
         font-weight: 700;
         text-align: left;
     }
 
     .pUltimoEpisodio {
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: $fontNunit;
         font-size: 20px;
-        color: #0D223F;
+        color: $color1;
         line-height: 35px;
         margin: 25px 0px 25px 0px;
         text-align: left;
@@ -179,12 +191,12 @@ hr {
     }
 }
 
-/* footer mobile */
+// footer mobile 
 
 .footer {
     text-align: center;
-    background-color: #0D223F;
-    color: #FFFFFF;
+    background-color: $color1;
+    color: $color2;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -193,9 +205,9 @@ hr {
     padding: 10px;
 
     .pFooter {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $fontWork;
         font-size: 16px;
-        color: #FFFFFF;
+        color: $color2;
         margin-bottom: 0;
 
     }
@@ -205,24 +217,24 @@ hr {
     }
 
     .aFooter {
-        color: #FFFFFF;
-        font-family: 'Work Sans', sans-serif;
+        color: $color2;
+        font-family: $fontWork;
         font-size: 16px;
     }
 }
 
-/* episodios.html (MOBILE) */
+// episodios.html (MOBILE) 
 
 .h1Episodios {
-    font-family: 'Work Sans', sans-serif;
+    font-family: $fontWork;
     text-align: center;
     font-size: 50px;
-    color: #0D223F;
+    color: $color1;
     margin: 55px;
     font-weight: 700;
 }
 
-/* Barra buscar */
+// Barra buscar 
 
 .buscar {
     text-align: center;
@@ -232,22 +244,22 @@ hr {
         padding: 15px;
         border-radius: 0px;
         border: solid 1px black;
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: $fontNunit;
         font-size: 20px;
     }
 
     .botonBuscar {
-        background-color: #0D223F;
-        color: #FFFFFF;
+        background-color: $color1;
+        color: $color2;
         padding: 15px;
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: $fontNunit;
         border: solid 1px #000;
         font-size: 20px;
         width: 100px;
     }
 }
 
-/* Episodios */
+// Episodios 
 
 .episodios {
     display: grid;
@@ -262,7 +274,7 @@ hr {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 25% 65% 10%;
-        background-color: #0D223F;
+        background-color: $color1;
         border-radius: 20px;
         padding: 25px;
         height: 400px;
@@ -270,8 +282,8 @@ hr {
         place-self: center center;
 
         .h3Episodios {
-            font-family: 'Work Sans', sans-serif;
-            color: #FFFFFF;
+            font-family: $fontWork;
+            color: $color2;
             text-align: center;
             padding: 0px 10px 10px 10px;
             font-size: 1, 1vw;
@@ -279,8 +291,8 @@ hr {
         }
 
         .pEpisodios {
-            font-family: 'Nunito Sans', sans-serif;
-            color: #FFFFFF;
+            font-family: $fontNunit;
+            color: $color2;
             margin-top: 40px;
             padding-bottom: 20px;
             font-size: 15px;
@@ -289,16 +301,16 @@ hr {
 
         .aEpisodios {
             display: inline-block;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             text-decoration: none;
-            color: #FFFFFF;
+            color: $color2;
             font-size: 15px;
             font-weight: 700;
         }
     }
 }
 
-/* Sobre Nosotros */
+// Sobre Nosotros 
 
 .sobreNosotros {
     width: 100%;
@@ -306,10 +318,10 @@ hr {
     text-align: center;
 
     .h1SobreNosotros {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $fontWork;
         text-align: center;
         font-size: 50px;
-        color: #0D223F;
+        color: $color1;
         margin: 45px;
         font-weight: 700;
     }
@@ -333,20 +345,20 @@ hr {
     }
 
     .divNosotros {
-        background-color: #0D223F;
+        background-color: $color1;
         width: 85%;
         margin: auto;
         box-shadow: 10px 10px 5px 0px #adadad;
 
         .h2Nosotros {
-            color: #fff;
+            color: $color2;
             margin: 25px 0px 0px 0px;
             padding: 25px 0px 0px 0px;
             font-size: 40px;
         }
 
         .pNosotros {
-            color: #fff;
+            color: $color2;
             margin: 25px;
             padding: 25px;
             font-size: 20px;
@@ -354,40 +366,40 @@ hr {
     }
 }
 
-/* marc_jospitre_consulting.html */
+// marc_jospitre_consulting.html 
 
 .jospitreConsulting {
     width: 90%;
     margin: auto;
 
     .h1AcercaMarc {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $fontAllura;
         text-align: center;
-        font-size: 30px;
-        color: #0D223F;
+        font-size: 40px;
+        color: $color1;
         margin: 25px;
         font-weight: 700;
     }
 
     .pAcercaMarc {
-        color: #0D223F;
+        color: $color1;
         font-size: 15px;
     }
 
     .h2LosImparables {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $fontAllura;
         text-align: center;
-        font-size: 25px;
-        color: #0D223F;
+        font-size: 40px;
+        color: $color1;
         margin: 25px;
         font-weight: 700;
     }
 
     .h2HistoriaMarc {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $fontAllura;
         text-align: center;
-        font-size: 25px;
-        color: #0D223F;
+        font-size: 40px;
+        color: $color1;
         margin: 25px;
         font-weight: 700;
     }
@@ -404,21 +416,21 @@ hr {
     }
 }
 
-/* Deja consulta */
+// Deja consulta 
 
 .h1Consulta {
-    color: #0D223F;
-    font-family: 'Work Sans', sans-serif;
+    color: $color1;
+    font-family: $fontWork;
     text-align: center;
     font-size: 40px;
-    color: #0D223F;
+    color: $color1;
     margin: 50px 25px 35px 25px;
     font-weight: 700;
 }
 
 .pConsulta {
-    font-family: 'Nunito Sans', sans-serif;
-    color: #0D223F;
+    font-family: $fontNunit;
+    color: $color1;
     font-size: 20px;
     text-align: center;
     margin: 15px;
@@ -427,8 +439,8 @@ hr {
 
 .contacto {
     margin: 35px;
-    background-color: #0D223F;
-    color: #FFFFFF;
+    background-color: $color1;
+    color: $color2;
     padding: 10px;
 
     .formContacto input,
@@ -437,16 +449,16 @@ hr {
         padding: 10px;
         border: none;
         background: none;
-        border-bottom: 1px solid #ffff;
+        border-bottom: 1px solid $color2f;
         outline: none;
-        color: #fff;
-        font-family: 'Nunito Sans', sans-serif;
+        color: $color2;
+        font-family: $fontNunit;
     }
 
     .formContacto label {
         font-size: 20px;
-        font-family: 'Nunito Sans', sans-serif;
-        color: #fff;
+        font-family: $fontNunit;
+        color: $color2;
         font-weight: 700;
     }
 
@@ -454,19 +466,19 @@ hr {
         width: 100%;
         padding: 10px;
         border: none;
-        background: #fff;
+        background: $color2;
         border-bottom: none;
         outline: none;
-        color: #0D223F;
+        color: $color1;
         font-size: 20px;
         font-weight: 700;
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: $fontNunit;
     }
 }
 
 @media only screen and (min-width: 768px) {
 
-    /* index tablet */
+    // index tablet 
 
     .arriba {
         height: 120px;
@@ -488,13 +500,13 @@ hr {
 
             .fa-brands {
                 font-size: 40px;
-                color: #0D223F;
+                color: $color1;
                 margin: 20px;
             }
 
             .fa-solid {
                 font-size: 40px;
-                color: #0D223F;
+                color: $color1;
                 margin: 20px;
             }
         }
@@ -515,10 +527,10 @@ hr {
         }
     }
 
-    /* nav tablet */
+    // nav tablet 
 
     .navbar {
-        background: #0D223F !important;
+        background: $color1 !important;
 
         .navbar-nav {
             display: flex;
@@ -526,20 +538,20 @@ hr {
             width: 100%;
 
             .nav-link {
-                color: #FFFFFF;
-                font-family: 'Work Sans', sans-serif;
+                color: $color2;
+                font-family: $fontWork;
                 font-size: 18px;
             }
 
             .nav-link:hover {
-                color: #ffffff;
+                color: $color2;
                 font-size: 19px;
             }
         }
     }
 
 
-    /* index.html tablet*/
+    // index.html tablet
 
     .divLogoInicio {
         text-align: center;
@@ -555,23 +567,23 @@ hr {
 
         .h1Inicio {
             margin: auto;
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontWork;
             font-size: 30px;
             text-align: justify;
             text-align-last: center;
             padding: 25px 0px 25px 0px;
-            color: #0D223F;
+            color: $color1;
             width: 90%;
             font-weight: 700;
         }
 
         .pInicio {
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             margin: auto;
             padding: 10px 0px 30px 0px;
             text-align: left;
             font-size: 22px;
-            color: #0D223F;
+            color: $color1;
             width: 90%;
         }
     }
@@ -579,7 +591,7 @@ hr {
     hr {
         margin: auto;
         height: 2px;
-        background-color: #0D223F;
+        background-color: $color1;
         width: 85%;
         text-align: center;
     }
@@ -602,11 +614,11 @@ hr {
 
         .h2UltimoEpisodio {
             grid-area: h2UE;
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontWork;
             font-size: 30px;
             font-style: normal;
             font-weight: 700;
-            color: #0D223F;
+            color: $color1;
             margin-bottom: 0px;
         }
 
@@ -620,8 +632,8 @@ hr {
 
         .h3UltimoEpisodio {
             grid-area: h3UE;
-            font-family: 'Nunito Sans', sans-serif;
-            color: #0D223F;
+            font-family: $fontNunit;
+            color: $color1;
             font-size: 25px;
             font-weight: 700;
             margin: 0px;
@@ -634,29 +646,29 @@ hr {
 
         .h4UltimoEpisodio {
             grid-area: h4UE;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             font-size: 22px;
-            color: #0D223F;
+            color: $color1;
             font-weight: 700;
             margin-top: 15px;
         }
 
         .pUltimoEpisodio {
             grid-area: pUE;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             font-size: 22px;
-            color: #0D223F;
+            color: $color1;
             line-height: 35px;
             overflow: visible;
         }
     }
 
-    /* footer tablet*/
+    // footer tablet
 
     .footer {
         text-align: center;
-        background-color: #0D223F;
-        color: #FFFFFF;
+        background-color: $color1;
+        color: $color2;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -665,9 +677,9 @@ hr {
         padding: 0px;
 
         .pFooter {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontWork;
             font-size: 18px;
-            color: #FFFFFF;
+            color: $color2;
             margin-bottom: 0;
 
         }
@@ -677,24 +689,24 @@ hr {
         }
 
         .aFooter {
-            color: #FFFFFF;
-            font-family: 'Work Sans', sans-serif;
+            color: $color2;
+            font-family: $fontWork;
             font-size: 18px;
         }
     }
 
-    /* episodios.html */
+    // episodios.html 
 
     .h1Episodios {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $fontWork;
         text-align: center;
         font-size: 80px;
         margin: 65px;
-        color: #0D223F;
+        color: $color1;
         font-weight: 700;
     }
 
-    /* Barra buscar */
+    // Barra buscar 
 
     .buscar {
         text-align: center;
@@ -704,16 +716,16 @@ hr {
             padding: 15px;
             border-radius: 0px;
             border: solid 1px black;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             font-size: 20px;
             width: 80%;
         }
 
         .botonBuscar {
-            background-color: #0D223F;
-            color: #FFFFFF;
+            background-color: $color1;
+            color: $color2;
             padding: 15px;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             border: 0;
             border: solid 1px #000;
             font-size: 20px;
@@ -721,7 +733,7 @@ hr {
         }
     }
 
-    /* Episodios */
+    // Episodios 
 
     .episodios {
         display: grid;
@@ -734,7 +746,7 @@ hr {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 25% 65% 10%;
-            background-color: #0D223F;
+            background-color: $color1;
             border-radius: 20px;
             padding: 20px;
             height: 400px;
@@ -743,8 +755,8 @@ hr {
             place-self: center center;
 
             .h3Episodios {
-                font-family: 'Work Sans', sans-serif;
-                color: #FFFFFF;
+                font-family: $fontWork;
+                color: $color2;
                 text-align: center;
                 padding: 10px;
                 font-size: 22px;
@@ -752,8 +764,8 @@ hr {
             }
 
             .pEpisodios {
-                font-family: 'Nunito Sans', sans-serif;
-                color: #FFFFFF;
+                font-family: $fontNunit;
+                color: $color2;
                 font-size: 15px;
                 overflow: hidden;
             }
@@ -761,9 +773,9 @@ hr {
 
             .aEpisodios {
                 display: inline-block;
-                font-family: 'Nunito Sans', sans-serif;
+                font-family: $fontNunit;
                 text-decoration: none;
-                color: #FFFFFF;
+                color: $color2;
                 font-size: 16px;
                 font-weight: 700;
             }
@@ -776,10 +788,10 @@ hr {
         text-align: center;
 
         .h1SobreNosotros {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontWork;
             text-align: center;
             font-size: 60px;
-            color: #0D223F;
+            color: $color1;
             margin: 45px;
             font-weight: 700;
         }
@@ -803,21 +815,21 @@ hr {
         }
 
         .divNosotros {
-            background-color: #0D223F;
+            background-color: $color1;
             width: 600px;
             margin: auto;
             box-shadow: 10px 10px 5px 0px #adadad;
 
             .h2Nosotros {
-                color: #fff;
+                color: $color2;
                 margin: 25px 0px 0px 0px;
                 padding: 25px 0px 0px 0px;
                 font-size: 40px;
             }
 
             .pNosotros {
-                font-family: 'Nunito Sans', sans-serif;
-                color: #fff;
+                font-family: $fontNunit;
+                color: $color2;
                 margin: 25px;
                 padding: 25px;
                 font-size: 20px;
@@ -825,41 +837,41 @@ hr {
         }
     }
 
-    /* marc_jospitre_consulting.html */
+    // marc_jospitre_consulting.html 
 
     .jospitreConsulting {
         width: 90%;
         margin: auto;
 
         .h1AcercaMarc {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontAllura;
             text-align: center;
-            font-size: 40px;
-            color: #0D223F;
+            font-size: 60px;
+            color: $color1;
             margin: 45px;
             font-weight: 700;
         }
 
         .pAcercaMarc {
-            font-family: 'Nunito Sans', sans-serif;
-            color: #0D223F;
+            font-family: $fontNunit;
+            color: $color1;
             font-size: 20px;
         }
 
         .h2LosImparables {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontAllura;
             text-align: center;
-            font-size: 35px;
-            color: #0D223F;
+            font-size: 60px;
+            color: $color1;
             margin: 45px;
             font-weight: 700;
         }
 
         .h2HistoriaMarc {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontAllura;
             text-align: center;
-            font-size: 35px;
-            color: #0D223F;
+            font-size: 60px;
+            color: $color1;
             margin: 45px;
             font-weight: 700;
         }
@@ -875,21 +887,21 @@ hr {
         }
     }
 
-    /*deja una consulta.html */
+    //deja una consulta.html 
 
     .h1Consulta {
-        color: #0D223F;
-        font-family: 'Work Sans', sans-serif;
+        color: $color1;
+        font-family: $fontWork;
         text-align: center;
         font-size: 45px;
-        color: #0D223F;
+        color: $color1;
         margin: 25px;
         font-weight: 700;
     }
     
     .pConsulta {
-        font-family: 'Nunito Sans', sans-serif;
-        color: #0D223F;
+        font-family: $fontNunit;
+        color: $color1;
         font-size: 25px;
         text-align: center;
         margin: 15px;
@@ -898,8 +910,8 @@ hr {
 
     .contacto {
         margin: 35px 20px 0px 20px;
-        background-color: #0D223F;
-        color: #FFFFFF;
+        background-color: $color1;
+        color: $color2;
         padding: 20px;
 
         .formContacto {
@@ -915,10 +927,10 @@ hr {
             padding: 10px;
             border: none;
             background: none;
-            border-bottom: 1px solid #ffff;
+            border-bottom: 1px solid $color2f;
             outline: none;
-            color: #fff;
-            font-family: 'Nunito Sans', sans-serif;
+            color: $color2;
+            font-family: $fontNunit;
         }
     
         .pConsulta,
@@ -932,8 +944,8 @@ hr {
 
         .formContacto label {
             font-size: 20px;
-            font-family: 'Nunito Sans', sans-serif;
-            color: #fff;
+            font-family: $fontNunit;
+            color: $color2;
             font-weight: 700;
         }
     
@@ -941,13 +953,13 @@ hr {
             width: 100%;
             padding: 10px;
             border: none;
-            background: #fff;
+            background: $color2;
             border-bottom: none;
             outline: none;
-            color: #0D223F;
+            color: $color1;
             font-size: 20px;
             font-weight: 700;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             grid-column: 1 / 4;
         }
     }
@@ -955,7 +967,7 @@ hr {
 
 @media only screen and (min-width: 1200px) {
 
-    /* index desktop */
+    // index desktop 
 
     .arriba {
         height: 130px;
@@ -977,22 +989,22 @@ hr {
 
             .fa-brands {
                 font-size: 40px;
-                color: #0D223F;
+                color: $color1;
                 margin: 20px;
             }
 
             .fa-solid {
                 font-size: 40px;
-                color: #0D223F;
+                color: $color1;
                 margin: 20px;
             }
         }
     }
 
-    /* nav */
+    // nav 
 
     .navbar {
-        background: #0D223F;
+        background: $color1;
         width: 100%;
 
         .navbar-nav {
@@ -1001,13 +1013,13 @@ hr {
             width: 100%;
 
             .nav-link {
-                color: #FFFFFF;
-                font-family: 'Work Sans', sans-serif;
+                color: $color2;
+                font-family: $fontWork;
                 font-size: 22px;
             }
 
             .nav-link:hover {
-                color: #ffffff;
+                color: $color2;
                 font-size: 23px;
 
             }
@@ -1015,7 +1027,7 @@ hr {
 
     }
 
-    /* contenido index*/
+    // contenido index
 
     .divLogoInicio {
         text-align: center;
@@ -1031,23 +1043,23 @@ hr {
 
         .h1Inicio {
             margin: auto;
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontWork;
             font-size: 40px;
             text-align: justify;
             text-align-last: center;
             padding: 25px 0px 25px 0px;
-            color: #0D223F;
+            color: $color1;
             width: 90%;
             font-weight: 700;
         }
 
         .pInicio {
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             margin: auto;
             padding: 10px 0px 30px 0px;
             text-align: left;
             font-size: 25px;
-            color: #0D223F;
+            color: $color1;
             width: 90%;
         }
     }
@@ -1055,7 +1067,7 @@ hr {
     hr {
         margin: auto;
         height: 2px;
-        background-color: #0D223F;
+        background-color: $color1;
         width: 85%;
         text-align: center;
     }
@@ -1078,11 +1090,11 @@ hr {
 
         .h2UltimoEpisodio {
             grid-area: h2UE;
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontWork;
             font-size: 40px;
             font-style: normal;
             font-weight: 700;
-            color: #0D223F;
+            color: $color1;
             margin-bottom: 0px;
         }
 
@@ -1100,8 +1112,8 @@ hr {
 
         .h3UltimoEpisodio {
             grid-area: h3UE;
-            font-family: 'Nunito Sans', sans-serif;
-            color: #0D223F;
+            font-family: $fontNunit;
+            color: $color1;
             font-size: 30px;
             font-weight: 700;
             margin: 0px;
@@ -1109,29 +1121,29 @@ hr {
 
         .h4UltimoEpisodio {
             grid-area: h4UE;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             font-size: 25px;
-            color: #0D223F;
+            color: $color1;
             font-weight: 700;
             margin-top: 10px;
         }
 
         .pUltimoEpisodio {
             grid-area: pUE;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             font-size: 25px;
-            color: #0D223F;
+            color: $color1;
             line-height: 35px;
             overflow: visible;
         }
     }
 
-    /* footer */
+    // footer 
 
     .footer {
         text-align: center;
-        background-color: #0D223F;
-        color: #FFFFFF;
+        background-color: $color1;
+        color: $color2;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1141,9 +1153,9 @@ hr {
         width: 100%;
 
         .pFooter {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontWork;
             font-size: 22px;
-            color: #FFFFFF;
+            color: $color2;
             align-self: center;
             margin-bottom: 0;
 
@@ -1154,23 +1166,23 @@ hr {
         }
 
         .aFooter {
-            color: #FFFFFF;
-            font-family: 'Work Sans', sans-serif;
+            color: $color2;
+            font-family: $fontWork;
             font-size: 22px;
         }
     }
 
-    /* episodios.html */
+    // episodios.html 
 
     .h1Episodios {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $fontWork;
         text-align: center;
         font-size: 80px;
         margin: 75px;
-        color: #0D223F;
+        color: $color1;
     }
 
-    /* Barra buscar */
+    // Barra buscar 
 
     .buscar {
         text-align: center;
@@ -1180,16 +1192,16 @@ hr {
             padding: 15px;
             border-radius: 0px;
             border: solid 1px black;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             font-size: 20px;
             width: 88%;
         }
 
         .botonBuscar {
-            background-color: #0D223F;
-            color: #FFFFFF;
+            background-color: $color1;
+            color: $color2;
             padding: 15px;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             border: 0;
             border: solid 1px #000;
             font-size: 20px;
@@ -1197,7 +1209,7 @@ hr {
         }
     }
 
-    /* Episodios */
+    // Episodios 
 
     .episodios {
         display: grid;
@@ -1210,7 +1222,7 @@ hr {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 25% 65% 10%;
-            background-color: #0D223F;
+            background-color: $color1;
             border-radius: 20px;
             padding: 20px;
             height: 400px;
@@ -1219,8 +1231,8 @@ hr {
             place-self: center center;
 
             .h3Episodios {
-                font-family: 'Work Sans', sans-serif;
-                color: #FFFFFF;
+                font-family: $fontWork;
+                color: $color2;
                 text-align: center;
                 padding: 10px 10px 0px 0px;
                 font-size: 1, 1vw;
@@ -1228,8 +1240,8 @@ hr {
             }
 
             .pEpisodios {
-                font-family: 'Nunito Sans', sans-serif;
-                color: #FFFFFF;
+                font-family: $fontNunit;
+                color: $color2;
                 font-size: 15px;
                 margin-top: 20px;
                 display: -webkit-box;
@@ -1240,22 +1252,22 @@ hr {
 
             .aEpisodios {
                 display: inline-block;
-                font-family: 'Nunito Sans', sans-serif;
+                font-family: $fontNunit;
                 text-decoration: none;
-                color: #fff;
+                color: $color2;
                 font-size: 16px;
                 font-weight: 700;
             }
         }
     }
 
-    /* consulta.html */
+    // consulta.html 
 
     .contacto {
         margin: 25px;
     }
 
-    /* sobre_nosotros.html */
+    // sobre_nosotros.html 
 
     .sobreNosotros {
         display: grid;
@@ -1263,10 +1275,10 @@ hr {
         grid-template-rows: 200px 1fr;
 
         .h1SobreNosotros {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontWork;
             text-align: center;
             font-size: 80px;
-            color: #0D223F;
+            color: $color1;
             font-weight: 700;
             grid-column: 1/4;
         }
@@ -1287,21 +1299,21 @@ hr {
         }
 
         .divNosotros {
-            background-color: #0D223F;
+            background-color: $color1;
             width: 80%;
             margin: auto;
             box-shadow: 10px 10px 5px 0px #adadad;
 
             .h2Nosotros {
-                color: #fff;
+                color: $color2;
                 margin: 25px 0px 0px 0px;
                 padding: 25px 10px 0px 10px;
                 font-size: 40px;
             }
 
             .pNosotros {
-                font-family: 'Nunito Sans', sans-serif;
-                color: #fff;
+                font-family: $fontNunit;
+                color: $color2;
                 margin: 0px;
                 padding: 25px;
                 font-size: 20px;
@@ -1309,41 +1321,41 @@ hr {
         }
     }
 
-    /* marc_jospitre_consulting.html */
+    // marc_jospitre_consulting.html 
 
     .jospitreConsulting {
         width: 90%;
         margin: auto;
 
         .h1AcercaMarc {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontAllura;
             text-align: center;
-            font-size: 55px;
-            color: #0D223F;
+            font-size: 75px;
+            color: $color1;
             margin: 45px;
             font-weight: 700;
         }
 
         .pAcercaMarc {
-            font-family: 'Nunito Sans', sans-serif;
-            color: #0D223F;
+            font-family: $fontNunit;
+            color: $color1;
             font-size: 25px;
         }
 
         .h2LosImparables {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontAllura;
             text-align: center;
-            font-size: 50px;
-            color: #0D223F;
+            font-size: 75px;
+            color: $color1;
             margin: 45px;
             font-weight: 700;
         }
 
         .h2HistoriaMarc {
-            font-family: 'Work Sans', sans-serif;
+            font-family: $fontAllura;
             text-align: center;
-            font-size: 50px;
-            color: #0D223F;
+            font-size: 75px;
+            color: $color1;
             margin: 45px;
             font-weight: 700;
         }
@@ -1358,21 +1370,21 @@ hr {
         }
     }
 
-    /*deja una consulta.html */
+    //deja una consulta.html 
 
     .h1Consulta {
-        color: #0D223F;
-        font-family: 'Work Sans', sans-serif;
+        color: $color1;
+        font-family: $fontWork;
         text-align: center;
         font-size: 45px;
-        color: #0D223F;
-        margin: 25px 25px 75px 25px;
+        color: $color1;
+        margin: 55px 25px 75px 25px;
         font-weight: 700;
     }
     
     .pConsulta {
-        font-family: 'Nunito Sans', sans-serif;
-        color: #0D223F;
+        font-family: $fontNunit;
+        color: $color1;
         font-size: 25px;
         text-align: center;
         margin: 25px;
@@ -1381,8 +1393,8 @@ hr {
 
     .contacto {
         margin: auto;
-        background-color: #0D223F;
-        color: #FFFFFF;
+        background-color: $color1;
+        color: $color2;
         padding: 20px;
         width: 85%;
         margin-top: 75px;
@@ -1400,10 +1412,10 @@ hr {
             padding: 10px;
             border: none;
             background: none;
-            border-bottom: 1px solid #ffff;
+            border-bottom: 1px solid $color2f;
             outline: none;
-            color: #fff;
-            font-family: 'Nunito Sans', sans-serif;
+            color: $color2;
+            font-family: $fontNunit;
         }
     
         .pConsulta,
@@ -1413,8 +1425,8 @@ hr {
 
         .formContacto label {
             font-size: 25px;
-            font-family: 'Nunito Sans', sans-serif;
-            color: #fff;
+            font-family: $fontNunit;
+            color: $color2;
             font-weight: 700;
         }
     
@@ -1422,20 +1434,20 @@ hr {
             width: 100%;
             padding: 10px;
             border: none;
-            background: #fff;
+            background: $color2;
             border-bottom: none;
             outline: none;
-            color: #0D223F;
+            color: $color1;
             font-size: 25px;
             font-weight: 700;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $fontNunit;
             grid-column: 1 / 4;
         }
 
         .buttonContacto:hover {
             background: rgb(22, 101, 212);
             transition: background-color 0.5s ease-in-out;
-            color: #fff;
+            color: $color2;
         }
     }
 }
