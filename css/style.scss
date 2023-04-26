@@ -6,17 +6,39 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
 // Fuentes
 
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Nunito+Sans:wght@300;400;600;700;800&family=Work+Sans:wght@500;600;700;800&display=swap');
+
+@font-face {
+    font-family: Bacalisties;
+    src: url(../Assets/FONTS/Bacalisties.ttf);
+}
+
+@font-face {
+    font-family: MuseSans;
+    src: url(../Assets/FONTS/MuseoSans-500.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: MuseSans;
+    src: url(../Assets/FONTS/MuseoSans-700.otf);
+    font-weight: 700;
+}
 
 // Variables
 
 $color1: #0D223F;
 $color2: #fff;
-$fontWork: 'work sans', sans-serif;
+$fontTitulo: MuseSans;
 $fontNunito: 'Nunito Sans', sans-serif;
-$fontAllura: 'Allura', cursive;
+$fontConsulting: Bacalisties;
 
 // Link
 
@@ -36,8 +58,8 @@ a:active {
         display: inline-block;
 
         .imgLogoArriba {
-            width: 150px;
-            padding: 15px;
+            width: 130px;
+            margin: 20px 10px 10px 10px;
             top: 0;
             left: 0;
         }
@@ -76,7 +98,7 @@ a:active {
 
     .nav-link {
         color: $color2;
-        font-family: $fontWork;
+        font-family: $fontTitulo;
         font-size: 21px;
     }
 
@@ -104,18 +126,18 @@ a:active {
 
     .h1Inicio {
         margin: auto;
-        font-family: $fontWork;
+        font-family: $fontTitulo;
         font-size: 27px;
         text-align: justify;
         text-align-last: center;
         padding: 35px 0px 25px 0px;
         color: $color1;
         width: 90%;
-        font-weight: 700;
+        font-weight: 500;
     }
 
     .pInicio {
-        font-family: $fontNunit;
+        font-family: $fontNunito;
         margin: auto;
         padding: 10px 0px 30px 0px;
         text-align: left;
@@ -145,7 +167,7 @@ hr {
     text-align: center;
 
     .h2UltimoEpisodio {
-        font-family: $fontWork;
+        font-family: $fontTitulo;
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
@@ -160,7 +182,7 @@ hr {
     }
 
     .h3UltimoEpisodio {
-        font-family: $fontNunit;
+        font-family: $fontNunito;
         color: $color1;
         font-size: 26px;
         margin: 25px 0px 15px 0px;
@@ -173,7 +195,7 @@ hr {
     }
 
     .h4UltimoEpisodio {
-        font-family: $fontNunit;
+        font-family: $fontNunito;
         font-size: 22px;
         color: $color1;
         font-weight: 700;
@@ -181,7 +203,7 @@ hr {
     }
 
     .pUltimoEpisodio {
-        font-family: $fontNunit;
+        font-family: $fontNunito;
         font-size: 20px;
         color: $color1;
         line-height: 35px;
@@ -205,8 +227,9 @@ hr {
     padding: 10px;
 
     .pFooter {
-        font-family: $fontWork;
+        font-family: $fontTitulo;
         font-size: 16px;
+        font-weight: 500;
         color: $color2;
         margin-bottom: 0;
 
@@ -218,15 +241,16 @@ hr {
 
     .aFooter {
         color: $color2;
-        font-family: $fontWork;
+        font-family: $fontTitulo;
         font-size: 16px;
+        font-weight: 500;
     }
 }
 
 // episodios.html (MOBILE) 
 
 .h1Episodios {
-    font-family: $fontWork;
+    font-family: $fontTitulo;
     text-align: center;
     font-size: 50px;
     color: $color1;
@@ -244,7 +268,7 @@ hr {
         padding: 15px;
         border-radius: 0px;
         border: solid 1px black;
-        font-family: $fontNunit;
+        font-family: $fontNunito;
         font-size: 20px;
     }
 
@@ -252,7 +276,7 @@ hr {
         background-color: $color1;
         color: $color2;
         padding: 15px;
-        font-family: $fontNunit;
+        font-family: $fontNunito;
         border: solid 1px #000;
         font-size: 20px;
         width: 100px;
@@ -278,30 +302,35 @@ hr {
         border-radius: 20px;
         padding: 25px;
         height: 400px;
-        width: 400px;
+        width: 75%;
         place-self: center center;
 
         .h3Episodios {
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             color: $color2;
             text-align: center;
             padding: 0px 10px 10px 10px;
-            font-size: 1, 1vw;
+            font-size: 18px;
             font-weight: 700;
         }
 
         .pEpisodios {
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             color: $color2;
             margin-top: 40px;
             padding-bottom: 20px;
-            font-size: 15px;
+            margin-bottom: 5px;
+            font-size: 17px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 8;
+            overflow: hidden;
         }
 
 
         .aEpisodios {
             display: inline-block;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             text-decoration: none;
             color: $color2;
             font-size: 15px;
@@ -318,7 +347,7 @@ hr {
     text-align: center;
 
     .h1SobreNosotros {
-        font-family: $fontWork;
+        font-family: $fontTitulo;
         text-align: center;
         font-size: 50px;
         color: $color1;
@@ -373,7 +402,7 @@ hr {
     margin: auto;
 
     .h1AcercaMarc {
-        font-family: $fontAllura;
+        font-family: $fontConsulting;
         text-align: center;
         font-size: 40px;
         color: $color1;
@@ -387,7 +416,7 @@ hr {
     }
 
     .h2LosImparables {
-        font-family: $fontAllura;
+        font-family: $fontConsulting;
         text-align: center;
         font-size: 40px;
         color: $color1;
@@ -396,7 +425,7 @@ hr {
     }
 
     .h2HistoriaMarc {
-        font-family: $fontAllura;
+        font-family: $fontConsulting;
         text-align: center;
         font-size: 40px;
         color: $color1;
@@ -420,7 +449,7 @@ hr {
 
 .h1Consulta {
     color: $color1;
-    font-family: $fontWork;
+    font-family: $fontTitulo;
     text-align: center;
     font-size: 40px;
     color: $color1;
@@ -429,7 +458,7 @@ hr {
 }
 
 .pConsulta {
-    font-family: $fontNunit;
+    font-family: $fontNunito;
     color: $color1;
     font-size: 20px;
     text-align: center;
@@ -449,15 +478,15 @@ hr {
         padding: 10px;
         border: none;
         background: none;
-        border-bottom: 1px solid $color2f;
+        border-bottom: 1px solid $color2;
         outline: none;
         color: $color2;
-        font-family: $fontNunit;
+        font-family: $fontNunito;
     }
 
     .formContacto label {
         font-size: 20px;
-        font-family: $fontNunit;
+        font-family: $fontNunito;
         color: $color2;
         font-weight: 700;
     }
@@ -472,7 +501,7 @@ hr {
         color: $color1;
         font-size: 20px;
         font-weight: 700;
-        font-family: $fontNunit;
+        font-family: $fontNunito;
     }
 }
 
@@ -487,8 +516,8 @@ hr {
             display: inline-block;
 
             .imgLogoArriba {
-                width: 150px;
-                padding: 15px;
+                width: 170px;
+                margin: 5px;
                 top: 0;
                 left: 0;
             }
@@ -539,7 +568,7 @@ hr {
 
             .nav-link {
                 color: $color2;
-                font-family: $fontWork;
+                font-family: $fontTitulo;
                 font-size: 18px;
             }
 
@@ -567,7 +596,7 @@ hr {
 
         .h1Inicio {
             margin: auto;
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             font-size: 30px;
             text-align: justify;
             text-align-last: center;
@@ -578,7 +607,7 @@ hr {
         }
 
         .pInicio {
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             margin: auto;
             padding: 10px 0px 30px 0px;
             text-align: left;
@@ -614,7 +643,7 @@ hr {
 
         .h2UltimoEpisodio {
             grid-area: h2UE;
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             font-size: 30px;
             font-style: normal;
             font-weight: 700;
@@ -632,7 +661,7 @@ hr {
 
         .h3UltimoEpisodio {
             grid-area: h3UE;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             color: $color1;
             font-size: 25px;
             font-weight: 700;
@@ -646,7 +675,7 @@ hr {
 
         .h4UltimoEpisodio {
             grid-area: h4UE;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             font-size: 22px;
             color: $color1;
             font-weight: 700;
@@ -655,7 +684,7 @@ hr {
 
         .pUltimoEpisodio {
             grid-area: pUE;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             font-size: 22px;
             color: $color1;
             line-height: 35px;
@@ -677,8 +706,9 @@ hr {
         padding: 0px;
 
         .pFooter {
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             font-size: 18px;
+            font-weight: 500;
             color: $color2;
             margin-bottom: 0;
 
@@ -690,15 +720,16 @@ hr {
 
         .aFooter {
             color: $color2;
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             font-size: 18px;
+            font-weight: 500;
         }
     }
 
     // episodios.html 
 
     .h1Episodios {
-        font-family: $fontWork;
+        font-family: $fontTitulo;
         text-align: center;
         font-size: 80px;
         margin: 65px;
@@ -716,7 +747,7 @@ hr {
             padding: 15px;
             border-radius: 0px;
             border: solid 1px black;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             font-size: 20px;
             width: 80%;
         }
@@ -725,7 +756,7 @@ hr {
             background-color: $color1;
             color: $color2;
             padding: 15px;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             border: 0;
             border: solid 1px #000;
             font-size: 20px;
@@ -738,42 +769,46 @@ hr {
     .episodios {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
         justify-content: space-evenly;
         align-content: space-evenly;
 
         .divEpisodios {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 25% 65% 10%;
+            grid-template-rows: 25% 62% 10%;
             background-color: $color1;
             border-radius: 20px;
             padding: 20px;
             height: 400px;
-            width: 350px;
+            width: 380px;
             margin: 0px 0px 40px 0px;
             place-self: center center;
 
             .h3Episodios {
-                font-family: $fontWork;
+                font-family: $fontTitulo;
                 color: $color2;
                 text-align: center;
                 padding: 10px;
-                font-size: 22px;
+                font-size: 24px;
                 font-weight: 700;
             }
 
             .pEpisodios {
-                font-family: $fontNunit;
+                font-family: $fontNunito;
                 color: $color2;
-                font-size: 15px;
+                font-size: 17px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 7;
                 overflow: hidden;
             }
 
 
             .aEpisodios {
                 display: inline-block;
-                font-family: $fontNunit;
+                font-family: $fontNunito;
                 text-decoration: none;
                 color: $color2;
                 font-size: 16px;
@@ -788,7 +823,7 @@ hr {
         text-align: center;
 
         .h1SobreNosotros {
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             text-align: center;
             font-size: 60px;
             color: $color1;
@@ -828,7 +863,7 @@ hr {
             }
 
             .pNosotros {
-                font-family: $fontNunit;
+                font-family: $fontNunito;
                 color: $color2;
                 margin: 25px;
                 padding: 25px;
@@ -844,7 +879,7 @@ hr {
         margin: auto;
 
         .h1AcercaMarc {
-            font-family: $fontAllura;
+            font-family: $fontConsulting;
             text-align: center;
             font-size: 60px;
             color: $color1;
@@ -853,13 +888,13 @@ hr {
         }
 
         .pAcercaMarc {
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             color: $color1;
             font-size: 20px;
         }
 
         .h2LosImparables {
-            font-family: $fontAllura;
+            font-family: $fontConsulting;
             text-align: center;
             font-size: 60px;
             color: $color1;
@@ -868,7 +903,7 @@ hr {
         }
 
         .h2HistoriaMarc {
-            font-family: $fontAllura;
+            font-family: $fontConsulting;
             text-align: center;
             font-size: 60px;
             color: $color1;
@@ -891,7 +926,7 @@ hr {
 
     .h1Consulta {
         color: $color1;
-        font-family: $fontWork;
+        font-family: $fontTitulo;
         text-align: center;
         font-size: 45px;
         color: $color1;
@@ -900,7 +935,7 @@ hr {
     }
     
     .pConsulta {
-        font-family: $fontNunit;
+        font-family: $fontNunito;
         color: $color1;
         font-size: 25px;
         text-align: center;
@@ -927,10 +962,10 @@ hr {
             padding: 10px;
             border: none;
             background: none;
-            border-bottom: 1px solid $color2f;
+            border-bottom: 1px solid $color2;
             outline: none;
             color: $color2;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
         }
     
         .pConsulta,
@@ -944,7 +979,7 @@ hr {
 
         .formContacto label {
             font-size: 20px;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             color: $color2;
             font-weight: 700;
         }
@@ -959,7 +994,7 @@ hr {
             color: $color1;
             font-size: 20px;
             font-weight: 700;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             grid-column: 1 / 4;
         }
     }
@@ -970,14 +1005,14 @@ hr {
     // index desktop 
 
     .arriba {
-        height: 130px;
+        height: 120px;
 
         .divLogoArriba {
             display: inline-block;
 
             .imgLogoArriba {
                 width: 180px;
-                padding: 15px;
+                margin: 5px;
                 top: 0;
                 left: 0;
             }
@@ -1014,7 +1049,7 @@ hr {
 
             .nav-link {
                 color: $color2;
-                font-family: $fontWork;
+                font-family: $fontTitulo;
                 font-size: 22px;
             }
 
@@ -1043,7 +1078,7 @@ hr {
 
         .h1Inicio {
             margin: auto;
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             font-size: 40px;
             text-align: justify;
             text-align-last: center;
@@ -1054,7 +1089,7 @@ hr {
         }
 
         .pInicio {
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             margin: auto;
             padding: 10px 0px 30px 0px;
             text-align: left;
@@ -1090,7 +1125,7 @@ hr {
 
         .h2UltimoEpisodio {
             grid-area: h2UE;
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             font-size: 40px;
             font-style: normal;
             font-weight: 700;
@@ -1112,7 +1147,7 @@ hr {
 
         .h3UltimoEpisodio {
             grid-area: h3UE;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             color: $color1;
             font-size: 30px;
             font-weight: 700;
@@ -1121,7 +1156,7 @@ hr {
 
         .h4UltimoEpisodio {
             grid-area: h4UE;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             font-size: 25px;
             color: $color1;
             font-weight: 700;
@@ -1130,7 +1165,7 @@ hr {
 
         .pUltimoEpisodio {
             grid-area: pUE;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             font-size: 25px;
             color: $color1;
             line-height: 35px;
@@ -1153,8 +1188,9 @@ hr {
         width: 100%;
 
         .pFooter {
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             font-size: 22px;
+            font-weight: 500;
             color: $color2;
             align-self: center;
             margin-bottom: 0;
@@ -1167,19 +1203,21 @@ hr {
 
         .aFooter {
             color: $color2;
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             font-size: 22px;
+            font-weight: 500;
         }
     }
 
     // episodios.html 
 
     .h1Episodios {
-        font-family: $fontWork;
+        font-family: $fontTitulo;
         text-align: center;
         font-size: 80px;
         margin: 75px;
         color: $color1;
+        font-weight: 700;
     }
 
     // Barra buscar 
@@ -1192,7 +1230,7 @@ hr {
             padding: 15px;
             border-radius: 0px;
             border: solid 1px black;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             font-size: 20px;
             width: 88%;
         }
@@ -1201,7 +1239,7 @@ hr {
             background-color: $color1;
             color: $color2;
             padding: 15px;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             border: 0;
             border: solid 1px #000;
             font-size: 20px;
@@ -1214,45 +1252,46 @@ hr {
     .episodios {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
         justify-content: space-evenly;
         align-content: space-evenly;
 
         .divEpisodios {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 25% 65% 10%;
+            grid-template-rows: 35% 45% 5%;
             background-color: $color1;
             border-radius: 20px;
-            padding: 20px;
+            padding: 15px;
             height: 400px;
             width: 75%;
             margin: 0px 0px 80px 0px;
             place-self: center center;
+            box-shadow: 15px 15px 25px 0px #000000;
 
             .h3Episodios {
-                font-family: $fontWork;
+                font-family: $fontTitulo;
                 color: $color2;
                 text-align: center;
-                padding: 10px 10px 0px 0px;
-                font-size: 1, 1vw;
+                padding: 20px 0px 0px 0px;
+                font-size: 18px;
                 font-weight: 700;
             }
 
             .pEpisodios {
-                font-family: $fontNunit;
+                font-family: $fontNunito;
                 color: $color2;
                 font-size: 15px;
-                margin-top: 20px;
+                margin-top: 5px;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
-                -webkit-line-clamp: 9;
+                -webkit-line-clamp: 7;
                 overflow: hidden;
             }
 
             .aEpisodios {
                 display: inline-block;
-                font-family: $fontNunit;
+                font-family: $fontNunito;
                 text-decoration: none;
                 color: $color2;
                 font-size: 16px;
@@ -1275,7 +1314,7 @@ hr {
         grid-template-rows: 200px 1fr;
 
         .h1SobreNosotros {
-            font-family: $fontWork;
+            font-family: $fontTitulo;
             text-align: center;
             font-size: 80px;
             color: $color1;
@@ -1312,7 +1351,7 @@ hr {
             }
 
             .pNosotros {
-                font-family: $fontNunit;
+                font-family: $fontNunito;
                 color: $color2;
                 margin: 0px;
                 padding: 25px;
@@ -1328,7 +1367,7 @@ hr {
         margin: auto;
 
         .h1AcercaMarc {
-            font-family: $fontAllura;
+            font-family: $fontConsulting;
             text-align: center;
             font-size: 75px;
             color: $color1;
@@ -1337,13 +1376,13 @@ hr {
         }
 
         .pAcercaMarc {
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             color: $color1;
             font-size: 25px;
         }
 
         .h2LosImparables {
-            font-family: $fontAllura;
+            font-family: $fontConsulting;
             text-align: center;
             font-size: 75px;
             color: $color1;
@@ -1352,7 +1391,7 @@ hr {
         }
 
         .h2HistoriaMarc {
-            font-family: $fontAllura;
+            font-family: $fontConsulting;
             text-align: center;
             font-size: 75px;
             color: $color1;
@@ -1374,7 +1413,7 @@ hr {
 
     .h1Consulta {
         color: $color1;
-        font-family: $fontWork;
+        font-family: $fontTitulo;
         text-align: center;
         font-size: 45px;
         color: $color1;
@@ -1383,7 +1422,7 @@ hr {
     }
     
     .pConsulta {
-        font-family: $fontNunit;
+        font-family: $fontNunito;
         color: $color1;
         font-size: 25px;
         text-align: center;
@@ -1412,10 +1451,10 @@ hr {
             padding: 10px;
             border: none;
             background: none;
-            border-bottom: 1px solid $color2f;
+            border-bottom: 1px solid $color2;
             outline: none;
             color: $color2;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
         }
     
         .pConsulta,
@@ -1425,7 +1464,7 @@ hr {
 
         .formContacto label {
             font-size: 25px;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             color: $color2;
             font-weight: 700;
         }
@@ -1440,7 +1479,7 @@ hr {
             color: $color1;
             font-size: 25px;
             font-weight: 700;
-            font-family: $fontNunit;
+            font-family: $fontNunito;
             grid-column: 1 / 4;
         }
 
@@ -1453,13 +1492,56 @@ hr {
 }
 
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1600px) {
     .episodios {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(auto, 1fr);
         justify-content: space-evenly;
         align-content: space-evenly;
+
+        .divEpisodios {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 35% 50% 5%;
+            background-color: $color1;
+            border-radius: 20px;
+            padding: 15px;
+            height: 400px;
+            width: 75%;
+            margin: 0px 0px 60px 0px;
+            place-self: center center;
+            box-shadow: 15px 15px 25px 0px #000000;
+
+            .h3Episodios {
+                font-family: $fontTitulo;
+                color: $color2;
+                text-align: center;
+                padding: 20px 0px 0px 0px;
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            .pEpisodios {
+                font-family: $fontNunito;
+                color: $color2;
+                font-size: 15px;
+                margin-top: 5px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 8;
+                overflow: hidden;
+            }
+
+            .aEpisodios {
+                display: inline-block;
+                font-family: $fontNunito;
+                text-decoration: none;
+                color: $color2;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
     }
 
 }

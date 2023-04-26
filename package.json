@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@dartmoon/aos-responsive": "^1.0.1"
+  }
+}
