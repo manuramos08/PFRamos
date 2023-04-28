@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-html, body {
-  overflow: hidden;
-  overflow-y: scroll;
-}
-
 @font-face {
   font-family: Bacalisties;
   src: url(../Assets/FONTS/Bacalisties.ttf);
@@ -518,7 +513,7 @@ hr {
   .ultimoEpisodio {
     display: grid;
     grid-template-columns: 45% 55%;
-    grid-template-rows: 75px 75px 175px 55px 1fr;
+    grid-template-rows: 75px 120px 175px 55px 1fr;
     grid-template-areas: "h2UE h2UE" "imgUE h3UE" "imgUE playUE" "imgUE h4UE" "imgUE pUE";
     width: 90%;
     margin: auto;
@@ -644,21 +639,24 @@ hr {
     padding: 20px;
     height: 400px;
     width: 380px;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 0px 0px;
     place-self: center center;
+    box-shadow: 15px 15px 25px 0px #000000;
+    transition: all 0.7s !important;
   }
   .episodios .divEpisodios .h3Episodios {
     font-family: MuseSans;
     color: #fff;
     text-align: center;
     padding: 10px;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 700;
   }
   .episodios .divEpisodios .pEpisodios {
     font-family: "Nunito Sans", sans-serif;
     color: #fff;
     font-size: 17px;
+    margin-top: 30px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -672,6 +670,25 @@ hr {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
+    transition: all 0.5s;
+  }
+  .episodios .divEpisodios:hover {
+    height: 440px;
+    width: 420px;
+  }
+  .episodios .divEpisodios:hover .h3Episodios {
+    font-size: 25px;
+  }
+  .episodios .divEpisodios:hover .pEpisodios {
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+  }
+  .episodios .aEpisodios:hover {
+    font-size: 20px;
+    text-shadow: 10px 10px 10px #000000;
   }
   .sobreNosotros {
     width: 100%;
@@ -1044,6 +1061,7 @@ hr {
     margin: 0px 0px 80px 0px;
     place-self: center center;
     box-shadow: 15px 15px 25px 0px #000000;
+    transition: all 0.5s !important;
   }
   .episodios .divEpisodios .h3Episodios {
     font-family: MuseSans;
@@ -1070,6 +1088,21 @@ hr {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
+    transition: all 0.5s;
+  }
+  .episodios .divEpisodios:hover {
+    height: 450px;
+    width: 80%;
+  }
+  .episodios .divEpisodios:hover .h3Episodios {
+    font-size: 19px;
+  }
+  .episodios .divEpisodios:hover .pEpisodios {
+    font-size: 16px;
+  }
+  .episodios .aEpisodios:hover {
+    font-size: 20px;
+    text-shadow: 10px 10px 10px #000000;
   }
   .contacto {
     margin: 25px;
@@ -1249,6 +1282,7 @@ hr {
     margin: 0px 0px 60px 0px;
     place-self: center center;
     box-shadow: 15px 15px 25px 0px #000000;
+    transition: all 0.7s !important;
   }
   .episodios .divEpisodios .h3Episodios {
     font-family: MuseSans;
@@ -1275,5 +1309,20 @@ hr {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
+    transition: all 0.5s;
+  }
+  .episodios .divEpisodios:hover {
+    height: 450px;
+    width: 80%;
+  }
+  .episodios .divEpisodios:hover .h3Episodios {
+    font-size: 23px;
+  }
+  .episodios .divEpisodios:hover .pEpisodios {
+    font-size: 17px;
+  }
+  .episodios .aEpisodios:hover {
+    font-size: 20px;
+    text-shadow: 10px 10px 10px #000000;
   }
 }/*# sourceMappingURL=style.css.map */
